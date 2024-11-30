@@ -8,7 +8,7 @@ const products = [
     { name: "Grill elektryczny", price: 220, category: "AGD" },
     { name: "Odkurzacz", price: 450, category: "AGD" },
     { name: "Tablica korkowa", price: 45, category: "Meble" },
-    { name: "Zestaw narzędzi", price: 180, category: "Narzędzia" }
+    { name: "Zestaw narzędzi", price: 200, category: "Narzędzia" }
   ];
 
   function filterProducts(products, category, minPrice, maxPrice) {

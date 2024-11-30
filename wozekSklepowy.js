@@ -1,8 +1,8 @@
-class Product {
-    constructor(name, price, quantity) {
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
+class Produkt {
+    constructor(nazwa, cena, ilosc) {
+        this.nazwa = nazwa;
+        this.cena = cena;
+        this.ilosc = ilosc;
     }
 }
 
@@ -11,17 +11,17 @@ class Cart {
         this.products = []
     }
 
-    addProduct(name, price, quantity) {
-        const newProduct = new Product(name, price, quantity);
-        this.products = [...this.products, newProduct]
+    addProduct(nazwa, cena, ilosc) {
+        const nowy = new Produkt(nazwa, cena, ilosc);
+        this.products = [...this.products, nowy]
     }
-    removeProduct(name) {
-        this.products = products.filter(product => product[0] != name)
+    removeProduct(nazwa) {
+        this.products = products.filter(product => product[0] != nazwa)
     }
     showCart() {
         console.log("Zawartość koszyka:");
         this.products.forEach(product => {
-            console.log(`${product.name}, Cena: ${product.price} zł, Ilość: ${product.quantity}`);
+            console.log(`${product.nazwa}, Cena: ${product.cena} zł, Ilość: ${product.ilosc}`);
         });
     }
 }

@@ -9,7 +9,7 @@ class Student {
         this.grades = [...this.grades, newGrade]
     }
     getAverage() {
-        const total = this.grades.reduce((sum, grade) => sum + grade, 0);
+        const total = this.grades.reduce((sum, grade) => sum + grade);
         return total / this.grades.length;
       }
 }
